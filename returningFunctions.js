@@ -57,14 +57,21 @@ let getDictionary = function (lang)
             2 -> deux
             3 -> trois
             use all small characters
-        */       
+        */      
+       switch (number) {
+        case 1:
+            return un;
+        case 2:
+            return deux;
+        case 3:
+            return trois;
+       }
     }
 
     /*
         Write an if-statement that would return either the engishDictionary or the frenchDictionary 
         based on the value of the argument 'lang'
     */
-}
 
 // Call the getDictionay function in a way that allows us to use the binding names below as the corresponding dictionary function
 let english; 
