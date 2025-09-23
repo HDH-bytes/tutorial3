@@ -12,6 +12,12 @@ let getDictionary = function (lang)
         and if the value of lang is 'F' , the frenchDictionary function is returned
 
     */
+   if (lang == "E"){
+    return englishDictionary;
+   } else if (lang == "F"){
+    return frenchDictionary;
+   }
+   }
 
     /*
         Complete the definition of the englishDictionary function
@@ -25,7 +31,18 @@ let getDictionary = function (lang)
             2 -> two
             3 -> three
             use all small characters
-        */       
+        */ 
+       switch (number){
+        case 1:
+            return one;
+            break;
+        case 2:
+            return two;
+            break;
+        case 3:
+            return three;
+            break;
+       }
     }
 
     /*
